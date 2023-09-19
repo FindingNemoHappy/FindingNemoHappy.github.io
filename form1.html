@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Order</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="form1.css">
+</head>
+<body>
+        
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <h2>PowerPoint Desain</h2>
+            <p>Ketentuan Order (Harga)</p>
+            <div class="popup">
+                <!-- ... Tombol "Premium" ... -->
+                <div class="styled-text premium-text">Premium Rp 5.000</div>
+                <!-- ... Tombol "Simple" ... -->
+                <div class="styled-text simple-text">Simpel Rp 3.000</div>
+            </div>            
+            <p id="belumText">Belum memiliki materi, dikenakan biaya Rp 20.000</p>
+            <p id="pengerjaanText">Pengerjaan kurang dari 1 hari, dikenakan biaya Rp 10.000</p>
+            <br>
+            <p id="Presentasi">Presentasi untuk:</p>
+            <p>*klik salah satu</p>>
+            <button id="btn1">Individu</button>
+            <button id="btn2">Kelompok</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>Form Order</h1>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" >
+            </div>
+            <div class="form-group">
+                <label for="university">Universitas</label>
+                <input type="text" id="university" name="university" >
+            </div>
+            <div class="form-group">
+                <label for="nim">NIM</label>
+                <input type="text" id="nim" name="nim" >
+            </div>
+            <div class="form-group">
+                <label>Paket</label>
+               <button id="premiumBtn" data-harga="5000">Premium</button>
+                <button id="simpleBtn" data-harga="3000">Simple</button>
+            </div>
+            
+            <div class="form-group">
+                <label for="jumlahHalaman">Jumlah Halaman</label>
+                <input type="number" id="jumlahHalaman" name="jumlahHalaman" min="0" >
+            </div>
+            
+            <div class="form-group">
+                <label>Materi</label>
+                <button id="materiSudahAda" data-harga="0">Sudah ada</button>
+                <button id="materiBelumAda" data-harga="20000">Belum ada</button>
+            </div>                      
+            <div class="form-group">
+                <label for="deadline">Deadline</label>
+                <input type="datetime-local" id="deadline" name="deadline">
+            </div>            
+            <div class="total-harga">
+                <p>Rp <span id="totalHarga">0</span> </p>
+            </div>
+            <button id="kirimPesanBtn" type="button">Kirim Pesan</button>
+        </form>
+    </div>
+
+    <script src="form1.js"></script>
+</body>
+</html>
