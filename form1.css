@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.styled-text {
+    display: inline-block;
+    color: #fff;
+    padding: 10px; /* Padding dalam elemen */
+    border-radius: 5px; /* Sudut elemen dibulatkan */
+    margin: 5px; /* Margin antara elemen */
+    font-weight: bold; /* Membuat teks tebal */
+    cursor: default; /* Mengubah kursor menjadi default (tidak dapat diklik) */
+}
+
+.premium-text {
+    background-color: #677201; /* Warna latar belakang tombol "Premium" */
+}
+
+.simple-text {
+    background-color: #677201; /* Warna latar belakang tombol "Simple" */
+}
+
+#Presentasi {
+    font-weight: bold;
+    line-height: 0;
+}
+
+
+.styled-text-group {
+    display: flex;
+    justify-content: space-between;
+    background-color: #007bff; /* Warna latar belakang seperti tombol */
+    color: #fff;
+    padding: 10px; /* Padding dalam elemen */
+    border-radius: 5px; /* Sudut elemen dibulatkan */
+    margin: 5px; /* Margin antara elemen */
+    font-weight: bold; /* Membuat teks tebal */
+    cursor: default; /* Mengubah kursor menjadi default (tidak dapat diklik) */
+}
+
+.styled-text {
+    /* ... (Gaya CSS lainnya) ... */
+    flex: 1; /* Memberikan elemen-elemen flex proporsi yang sama */
+}
+
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 0; /* Mengatur padding atas dan bawah, tanpa padding di sisi kiri dan kanan */
+    width: 100px; /* Mengatur lebar tombol secara eksplisit (misalnya, 100 piksel) */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label {
+    width: 100px; /* Atur lebar label sesuai kebutuhan Anda */
+    text-align: left;
+}
+
+input {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* CSS untuk total harga di tengah */
+.total-harga {
+    text-align: center;
+    margin: 10px auto; /* Auto margin horizontal akan menjaga elemen berada di tengah */
+    color: green; /* Warna teks menjadi hijau */
+    font-size: 15px;
+    border: 1px solid green; /* Menambahkan border */
+    padding: 5px 10px; /* Padding untuk elemen */
+    border-radius: 20px; /* Membuat border lebih bundar */
+    border-width: 3px;
+    max-width: 100px; /* Lebar maksimum border (sesuaikan dengan kebutuhan Anda) */
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
