@@ -42,18 +42,57 @@ body {
 }
 
 .premium-text {
-    background-color: #677201; /* Warna latar belakang tombol "Premium" */
+    background-color: green; /* Warna latar belakang tombol "Premium" */
 }
 
 .simple-text {
-    background-color: #677201; /* Warna latar belakang tombol "Simple" */
+    background-color: green; /* Warna latar belakang tombol "Simple" */
 }
+.tekssatu,
+.teksdua {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 20px 10px; /* Mengatur padding atas dan bawah, tanpa padding di sisi kiri dan kanan */
+    width: 150px; /* Mengatur lebar tombol secara eksplisit (misalnya, 100 piksel) */
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+    cursor:default;
+}
+
+.tekssatu {
+    margin-right: 10px;
+}
+
+.duapuluh,
+.sepuluh {
+    width: 100px;
+    margin-top: -10px;
+    cursor: default;
+}
+
+.duapuluh:hover{
+    background-color: #007bff;
+
+}
+.sepuluh:hover {
+    background-color: #007bff;
+}
+
+
 
 #Presentasi {
     font-weight: bold;
     line-height: 0;
 }
 
+.tekssatu:hover {
+    background-color: crimson;
+}
+.teksdua:hover {
+    background-color: crimson
+}
 
 .styled-text-group {
     display: flex;
@@ -142,3 +181,82 @@ input {
 }
 
 
+@media screen and (max-width: 405px) {
+    .premium-text {
+        background-color: green; /* Warna latar belakang tombol "Premium" */
+        margin-right: 0;
+    }
+    
+    .simple-text {
+        background-color: green; /* Warna latar belakang tombol "Simple" */
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .premium-text {
+        background-color: green; /* Warna latar belakang tombol "Premium" */
+        margin-right: 0px;
+        margin-left: 0;
+    }
+    
+    .simple-text {
+        background-color: green; /* Warna latar belakang tombol "Simple" */
+        margin-left: 0px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .tekssatu,
+    .teksdua {
+        background-color: crimson;
+        color: #fff;
+        border: none;
+        padding: 20px 10px; /* Mengatur padding atas dan bawah, tanpa padding di sisi kiri dan kanan */
+        width: 120px; /* Mengatur lebar tombol secara eksplisit (misalnya, 100 piksel) */
+        border-radius: 5px;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+
+    .tekssatu {
+        margin-right: 10px;
+    }
+
+}
+@media screen and (max-width: 385px) {
+    .premium-text {
+        background-color: green; /* Warna latar belakang tombol "Premium" */
+        margin-right: 0px;
+        margin-left: 0;
+        width: 100px;
+    }
+    
+    .simple-text {
+        background-color: green; /* Warna latar belakang tombol "Simple" */
+        margin-left: 0px;
+        margin-right: 0;
+        width: 100px;
+    }
+}
+
+
+@media screen and (max-width: 267px) {
+    .tekssatu,
+    .teksdua {
+        background-color: crimson;
+        color: #fff;
+        border: none;
+        padding: 20px 10px; /* Mengatur padding atas dan bawah, tanpa padding di sisi kiri dan kanan */
+        width: 100px; /* Mengatur lebar tombol secara eksplisit (misalnya, 100 piksel) */
+        border-radius: 5px;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+
+    .tekssatu {
+        margin-right: 10px;
+    }
+
+}
